@@ -1,0 +1,63 @@
+.task {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  transition: all 0.2s ease-in;
+  background-color: rgba(0, 0, 0, 0.403);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.task-row {
+  display: flex;
+  width: 100%;
+  line-height: 0;
+}
+
+.task.completed {
+  background-color: rgba(46, 213, 46, 0.277);
+}
+.task-text {
+  font-size: 16px;
+  /* border-bottom: 1px solid white; */
+  padding-bottom: 2px;
+}
+
+.rd-task {
+  background: none;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  border: none;
+  margin-right: 10px;
+  transition: all 0.2s ease-in;
+  height: 40px;
+  width: 100%;
+  /* padding: 0px 10px; */
+}
+.rd-task:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.btn-comp {
+  all: unset;
+  cursor: pointer;
+}
+.task-row {
+  display: flex; /* Робимо контейнер гнучким */
+  justify-content: space-between; /* Розподіляємо простір між елементами */
+  gap: 15px;
+  align-items: center; /* Вирівнюємо по вертикалі */
+  width: 100%;
+}
+
+.task-btns {
+  display: flex; /* Робимо кнопки в одному рядку */
+  gap: 5px;
+}
+
+p {
+  flex: 1; /* Текст займає всю доступну ширину */
+  margin: 0; /* Видаляємо дефолтні відступи */
+  text-align: left; /* Текст вирівнюється ліворуч */
+}
